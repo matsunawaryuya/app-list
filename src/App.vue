@@ -1,17 +1,23 @@
-<template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+<template lang="pug">
+div
+  img(
+    alt="Vue logo"
+    src="./assets/logo.png"
+  )
+  HelloWorld(msg="Welcome to Your Vue.js App")
 </template>
 
 <script>
+import { defineComponent } from '@vue/composition-api';
+
 import HelloWorld from './components/HelloWorld.vue'
 
-export default {
+export default defineComponent({
   name: 'App',
   components: {
     HelloWorld
   }
-}
+});
 </script>
 
 <style>
