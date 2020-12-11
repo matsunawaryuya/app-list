@@ -2,6 +2,8 @@
 #app
   router-link(to="/")
     | index
+  router-link(to="/chess")
+    | chess
   router-view
   HelloWorld(msg="Welcome to Your Vue.js App")
 </template>
