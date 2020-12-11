@@ -1,9 +1,8 @@
 <template lang="pug">
-div
-  img(
-    alt="Vue logo"
-    src="./assets/logo.png"
-  )
+#app
+  router-link(to="/")
+    | index
+  router-view
   HelloWorld(msg="Welcome to Your Vue.js App")
 </template>
 
